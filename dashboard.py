@@ -6,7 +6,7 @@ st.set_page_config(page_title="Classic Caspian SDR", page_icon="🐟", layout="w
 # Try to load secrets for Streamlit Cloud
 try:
       AIRTABLE_KEY = st.secrets["airtable"]["api_key"]
-  except:
+except:
     AIRTABLE_KEY = ""
 
 SEGMENTS = {
